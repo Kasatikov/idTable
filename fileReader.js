@@ -19,6 +19,10 @@ input.addEventListener("change", function () {
                 hashTable.insert(truncatedValue, truncatedValue);
                 simpleSearch.insert(value);
             });
+            let log =  document.getElementById("log");
+            let simpleLog = document.getElementById("simple-log");
+            log.innerHTML = '';
+            simpleLog.innerHTML = '';
         });
 
         reader.readAsBinaryString(myFile);
