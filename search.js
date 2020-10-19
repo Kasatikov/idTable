@@ -9,7 +9,7 @@ submit.onclick = function() {
         simpleLog.innerHTML = '';
         let hashResult = hashTable.getItemIndex(search.value);
         let simpleResult = simpleSearch.getItemIndex(search.value);
-        if (hashResult) {
+        if (hashResult !== null) {
             log.insertAdjacentHTML('afterbegin', '<div>Результат поиска по методу цепочек: Id найден, его номер: ' + hashResult + '</div>');
         }
         else {
