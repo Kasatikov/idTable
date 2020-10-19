@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table id</title>
+</head>
+<style>
+    html, body {
+        height: 100%;
+    }
+    .common-wrapper, .textarea-wrapper {
+        display: flex;
+    }
+    .textarea-wrapper {
+        display: flex;
+        margin-left: auto;
+        flex-direction: column;
+    }
+    #simple-search {
+        margin-left: auto;
+    }
+</style>
+<body>
+<input type="file" id="myFile">
+<hr>
+<div class="common-wrapper">
+<div class="textarea-wrapper" style="margin-left: 0">
+    <span>Метод цепочек</span>
+    <textarea readonly style="width:300px;height: 200px" id="chain-method"></textarea>
+</div>
+<div class="textarea-wrapper">
+    <span>Простой поиск</span>
+    <textarea readonly style="width:300px;height: 200px" id="simple-search"></textarea>
+</div>
+</div>
+<div class="search" style="display: flex;justify-content: center;">
+    <input type="text" id="search" placeholder="Введите id"/>
+    <button id="submit">Поиск</button>
+</div>
+<div style="display: flex;
+    justify-content: space-between;
+    align-items: baseline;">
+    <div id="log" style="text-align: left;"></div>
+    <div id="simple-log" style="text-align: right;"></div>
+</div>
+<script src="./hashTable.js"></script>
+<script src="./simpleSearch.js"></script>
+<script src="./fileReader.js"></script>
+<script src="./search.js"></script>
+</body>
+</html>
